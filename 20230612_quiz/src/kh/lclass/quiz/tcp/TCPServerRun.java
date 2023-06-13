@@ -15,13 +15,31 @@ public class TCPServerRun {
 서버용 TCP 소켓 프로그래밍 순서
 
 1. 서버의 포트번호 정함
+int port = 9001;
+
 2. 서버용 소켓 객체 생성
+ServerSocket ss=null;
+ss = new ServerSocket(port);
+
 3. 클라이언트 쪽에서 접속 요청이 오길 기다림
-4. 접속 요청이 오면 요청 수락 후 해당 클라이언트에 대한 소켓
-객체 생성
+4. 접속 요청이 오면 요청 수락 후 해당 클라이언트에 대한 소켓 객체 생성
+Socket s = null;
+s = ss.accept();
+
 5. 연결된 클라이언트와 입출력 스트림 생성
+InputStream is = s.getInputStream();
+
+
 6. 보조 스트림을 통해 성능 개선
+
 7. 스트림을 통해 읽고 쓰기
+fw.write().fw.flush();
+
+while(...br.readLine()...)
+
+
 8. 통신 종료 
- 
+ if(ss!=null) ss.close();
+
+
  */

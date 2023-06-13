@@ -6,9 +6,22 @@ public class TryCatchFinally {
 	
 	구문
 	try {
+		fos = new FileOutputStream(filepath);
+		fos.write(); > fos.flush();
+	
+		String str = null;
+		while ((str = fis.readxxx()) != null){
+			sysout(str);
+		}
+	
 		// 내용
 		정상적으로 수행했으면 하는 동작들
 		실행중 예기치 못한 오류가 발생할 수 있음
+		
+		
+		
+		
+		
 		throws XxxException (Checked Exception)에 대한 처리
 		return result;
 	} catch ( XxxException e) {
