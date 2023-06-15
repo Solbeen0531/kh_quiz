@@ -64,10 +64,10 @@ public class TCPServer {
 					wr.close();
 				if (br != null)
 					br.close();
-				if (out != null)
-					out.close();
-				if (in != null)
-					in.close();
+//				if (out != null)
+//					out.close();
+//				if (in != null)
+//					in.close();
 				if (sc != null)
 					sc.close();
 				if (ss != null)
